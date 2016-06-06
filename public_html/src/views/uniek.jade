@@ -1,0 +1,27 @@
+//- 
+    To change this license header, choose License Headers in Project Properties.
+    To change this template file, choose Tools | Templates
+    and open the template in the editor.
+     
+
+html
+            a(href='/logout') log out
+            <br>
+            <br>
+            a(href='/homepage') go to homepage
+        body
+            h1= post.title
+            h2= post.bericht
+
+        form(name='commentaar' method='post' action='/uniek')    
+            textarea(rows="4" cols="22" name='comment' type='text' placeholder='je bericht')
+            <br>
+            <br>
+            input(type='submit' value='post your comment')
+            each commentaar in post.comments
+                p comment posted by: <strong>#{commentaar.author}</strong>
+
+                h2= commentaar.comment
+
+                
+            

@@ -1,0 +1,9 @@
+html
+    a(href='/') go to index
+    <br>
+    a(href='/register') go to register
+    body
+        form(name='login' method='post' action='/login')
+            input(name='username' type='text' placeholder='your username')
+            input(name='password' type='text' placeholder='password')
+            input(value='log in' type='submit')

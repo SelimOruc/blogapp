@@ -1,0 +1,19 @@
+html
+    title faka
+    a(href='/logout') log out
+    <br>
+    <br>
+    a(href='/post') create a post
+    <br>
+    <br>
+    a(href='/homepage') go to homepage
+    body
+    h1 The Blogggg
+    p ------------------------------
+        each bericht in blog   
+            h1= bericht.title
+            h2= bericht.bericht
+            p dit bericht is geplaats door: <strong>#{bericht.register.username}</strong> met de id <strong>#{bericht.registerId}</strong>
+            a(href="/uniek/#{bericht.id}") post some comments
+                
+            

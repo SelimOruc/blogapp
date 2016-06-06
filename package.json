@@ -1,0 +1,21 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "Selim",
+  "contributors": [],
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jade": "^1.11.0",
+    "pg": "^4.5.5",
+    "sequelize": "^3.23.3"
+  }
+}

@@ -1,0 +1,16 @@
+html
+    a(href='/logout') log out
+    <br>
+    <br>
+    a(href='/ownpost') view own post
+    <br>
+    <br>
+    body
+        form(name='post' method='post' action='/post')
+            input(name='title' type='text' placeholder='title')
+            <br>
+            <br>
+            textarea(rows="9" cols="22" name='body' type='text' placeholder='je bericht')
+            <br>
+            <br>
+            input(type='submit' value='post je bericht')
