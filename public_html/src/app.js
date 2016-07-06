@@ -13,7 +13,7 @@ app.use(session({
 }));
 
 
-var sequelize = new Sequelize('blog', 'postgres', "Selim0ruc", {
+var sequelize = new Sequelize('blog', 'postgres', "", { //ww op ""
 	host: 'localhost',
 	dialect: 'postgres',
         define: {
